@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  overflow-y: auto;
-  height: 75vh;
-  border: 1px solid green;
+  // overflow-y: auto;
+  height: max-content;
+  // border: 1px solid green;
 }
 
 .input-container {
@@ -22,6 +22,14 @@ ul {
   position: relative;
   padding: 10px 0;
 }
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1.5px solid #8f3333;
+  cursor: pointer;
+}
 
 .list-group-pages {
   li {
@@ -31,6 +39,7 @@ ul {
     color: rgb(101 43 26);
     border-bottom: 1.5px solid #8f3333;
     cursor: pointer;
+    justify-content: space-between;
   }
 }
 
@@ -42,7 +51,7 @@ ul {
   border-bottom: 1px solid #ddd;
   cursor: pointer;
   color: rgb(232 222 194);
-  h5 {
+  .oferta-do-dia {
     padding: 10px;
   }
   li {
@@ -52,19 +61,36 @@ ul {
     background-color: rgb(199 164 148);
     padding: 10px 0;
     color: rgb(50 66 102);
-    border-bottom: 1px solid #ddd;
+
     cursor: pointer;
   }
   margin-bottom: 0;
 }
 
 .list-group-filters-categorias {
-      list-style: none;
-    height: 40px;
-    width: 100%;
+  list-style: none;
+  height: 40px;
+  width: 100%;
+  font-size: small;
+  padding: 10px 0;
+  color: rgb(50 66 102);
 
-    padding: 10px 0;
-    color: rgb(50 66 102);
-    border-bottom: 1px solid #ddd;
-    cursor: pointer;
+  cursor: pointer;
+  li {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    border-bottom: #8f3333 1px solid;
+    .before-item {
+      background-color: #8f3333;
+      width: 10px;
+      height: 25px;
+      margin-right: 15px;
+    }
+    .icon-categoria {
+      width: 25px;
+      height: 25px;
+      margin-right: 15px;
+      border-radius: 50%;
+    }
+  }
 }

@@ -6,10 +6,11 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { PagesComponent } from './pages/pages.component';
 import { RouterModule } from "@angular/router";
+import { PagesModule } from "./pages/pages.module";
 
 @NgModule({
-  declarations: [LayoutComponent, SidebarComponent, FooterComponent, HeaderComponent, PagesComponent],
-  imports: [CommonModule, RouterModule],
+  declarations: [LayoutComponent, SidebarComponent, FooterComponent, HeaderComponent],
+  imports: [CommonModule, PagesModule, RouterModule],
   exports: [LayoutComponent]
 })
 export class LayoutModule { }

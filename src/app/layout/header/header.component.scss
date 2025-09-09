@@ -6,7 +6,7 @@ header {
   height: 150px;
   .background {
     background-image: url("../../../assets/images/header_bg_01.png") !important;
-    opacity: 0.5;
+    opacity: 0.2;
     position: absolute;
     height: 150px;
     width: 100%;
@@ -15,12 +15,21 @@ header {
   }
 }
 
+.logo {
+  margin: 25px 0;
+  width: 180px;
+}
+
 @media (max-width: 768px) {
   header {
     height: 100px;
     .background {
       height: 100px;
       background-size: 50%;
+    }
+    .logo {
+      margin: 25px 0;
+      width: 100px;
     }
   }
 }

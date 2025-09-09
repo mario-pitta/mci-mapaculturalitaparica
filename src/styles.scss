@@ -26,7 +26,28 @@
 
 body {
   margin: 0;
-  font-family: OfertaDoDia, "Helvetica Neue", sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
   background-color: rgb(232 224 210);
 }
 
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.oferta-do-dia {
+  font-family: OfertaDoDia, "Helvetica Neue", sans-serif;
+}
+
+.bangfel {
+  font-family: Bangfel, "Helvetica Neue", sans-serif;
+}
+
+.consola-mono {
+  font-family: ConsolaMono-Book, "Helvetica Neue", sans-serif;
+}
+
+.consola-mono-bold {
+  font-family: ConsolaMono-Bold, "Helvetica Neue", sans-serif;
+}

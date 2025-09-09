@@ -1,0 +1,81 @@
+
+
+.banner-bg {
+  background-image: url("/assets/images/photos/itaparica_01.jpg");
+  width: 100%;
+  height: 35vh;
+  background-size: cover;
+}
+
+.blue-bg {
+  background-color: rgb(82 143 141);
+  width: 100%;
+  // height: 1850px;
+  // background-size: cover;
+}
+
+.content {
+  padding: 20px 100px;
+  color: aliceblue;
+  h1 {
+    font-size: 65px;
+    color: rgb(28 64 52);
+    font-weight: lighter;
+  }
+  section {
+    max-width: 450px;
+    p {
+      font-family: 'ConsolaMono-Book';
+    }
+  }
+
+  h3 {
+    font-size: 30px;
+    color: rgb(42 55 74);
+    font-weight: lighter;
+  }
+}
+
+.article {
+  display: flex;
+  gap: 100px;
+  text-indent: 1.5em;
+  margin-left: 20px;
+  text-align: justify;
+}
+
+
+.callbtn {
+  background-color: #e8e0d2;
+  color: #941b02;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 2rem;
+  border: none;
+  box-shadow: 4px 6px 13px 1px #5b4d4a;
+  cursor: pointer;
+
+  //ao ser clicado, muda de estilo para mostrar interação do usuario
+  &:active {
+    // background-color: #941b02;
+    box-shadow:inset 0px -1px 6px 1px #5b4d4a;
+    font-size: 1.8rem;
+    // box-shadow: none;
+    // color: #e8e0d2;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100vw;
+  }
+
+
+}
+
+
+
+

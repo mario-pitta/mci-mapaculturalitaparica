@@ -2,19 +2,19 @@
   <input type="text" id="text" class="input-container" placeholder="O que você procura?">
   <ul class="list-group-pages">
     <li *ngFor="let item of sidebarItems" [routerLink]="item.url"
-      class="d-flex align-items-center justify-content-between">
+      class="d-flex align-items-center justify-content-between consola-mono-bold">
       <span>{{ item.name }}</span>
       <i> >></i>
     </li>
   </ul>
 
   <ul class="list-group-filters-locais">
-    <h5>
+    <h4 class="oferta-do-dia">
       SELECIONE O QUE VOCÊ QUER VER
-    </h5>
+    </h4>
 
 
-    <li *ngFor="let local of locais" >
+    <li *ngFor="let local of locais" class="consola-mono" >
       <img [src]="local.icon" alt="" srcset="">
       <span> {{local.name}}</span>
     </li>
@@ -22,8 +22,9 @@
 
 
   <ul class="list-group-filters-categorias">
-    <li *ngFor="let categoria of categorias">
-      <img class="categoria-icon" [src]="categoria.icon" alt="icone de {{categoria.name}}" srcset="">
+    <li *ngFor="let categoria of categorias" class="consola-mono">
+      <div class="before-item" [ngClass]="categoria.color"></div>
+      <img class="icon-categoria" [src]="categoria.icon" alt="icone de {{categoria.name}}" srcset="">
       <span> {{categoria.name}}</span>
     </li>
   </ul>

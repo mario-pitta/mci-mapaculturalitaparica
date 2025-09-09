@@ -7,28 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
   sidebarItems = [
-    { name: 'Sobre', url: '/sobre' },
-    { name: 'Artigos', url: '/artigos' },
-    { name: 'Calendário', url: '/calendario' },
-    { name: 'Contato', url: '/contato' }
+    { name: 'SOBRE', url: '/sobre' },
+    { name: 'ARTIGOS', url: '/artigos' },
+    { name: 'CALENDÁRIO', url: '/calendario' },
+    { name: 'CONTATO', url: '/contato' }
   ]
 
   locais = [
     { name: 'Itaparica', url: '/itaparica', icon: 'red' },
     { name: 'Itaparica', url: '/itaparica', icon: 'red' },
     { name: 'Itaparica', url: '/itaparica', icon: 'red' },
+    { name: 'Itaparica', url: '/itaparica', icon: 'red' },
   ];
 
   categorias = [
-    {name: 'teatro', icon: 'path/to/teatro-icon.png', color: 'color'},
-    {name: 'musica', icon: 'path/to/musica-icon.png', color: 'color'},
-    {name: 'dança', icon: 'path/to/dança-icon.png', color: 'color'},
-    {name: 'literatura', icon: 'path/to/literatura-icon.png', color: 'color'},
-    {name: 'cinema e audiovisual', icon: 'path/to/cinema e audiovisual-icon.png', color: 'color'},
-    {name: 'patrimonio imaterial', icon: 'path/to/patrimonio imaterial-icon.png', color: 'color'},
-    {name: 'patrimonio material', icon: 'path/to/patrimonio material-icon.png', color: 'color'},
-    {name: 'grupos culturais/coletivos', icon: 'path/to/grupos culturais/coletivos-icon.png', color: 'color'},
-    {name: 'pontos de cultura', icon: 'path/to/pontos de cultura-icon.png', color: 'color'},
+    {name: 'teatro', icon: 'https://images.icon-icons.com/3081/PNG/64/detective_avatar_man_person_investigation_icon_191300.png', color: 'red' },
+    {name: 'musica', icon: 'https://images.icon-icons.com/3081/PNG/64/detective_avatar_man_person_investigation_icon_191300.png', color: 'red' },
+    {name: 'dança', icon: 'https://images.icon-icons.com/3081/PNG/64/detective_avatar_man_person_investigation_icon_191300.png', color: 'red ' },
+    {name: 'literatura', icon: 'https://images.icon-icons.com/3081/PNG/64/detective_avatar_man_person_investigation_icon_191300.png', color: 'red' },
+    {name: 'cinema e audiovisual', icon: 'https://images.icon-icons.com/3081/PNG/64/detective_avatar_man_person_investigation_icon_191300.png', color: 'red' },
+    {name: 'patrimonio imaterial', icon: 'https://images.icon-icons.com/3081/PNG/64/detective_avatar_man_person_investigation_icon_191300.png', color: 'red' },
+    {name: 'patrimonio material', icon: 'https://images.icon-icons.com/3081/PNG/64/detective_avatar_man_person_investigation_icon_191300.png', color: 'red ' },
+    {name: 'grupos culturais/coletivos', icon: 'https://images.icon-icons.com/3081/PNG/64/detective_avatar_man_person_investigation_icon_191300.png', color: 'red' },
+    {name: 'pontos de cultura', icon: 'https://images.icon-icons.com/3081/PNG/64/detective_avatar_man_person_investigation_icon_191300.png', color: 'red'},
 
   ]
 
