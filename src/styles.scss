@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+//importa as fontes personalizadas
+@font-face {
+  font-family: 'Bangfel';
+  src: url('./assets/fonts/Bangfel.ttf');
+}
+@font-face {
+  font-family: 'ConsolaMono-Bold';
+  src: url('./assets/fonts/ConsolaMono-Bold.ttf');
+}
+@font-face {
+  font-family: 'ConsolaMono-Book';
+  src: url('./assets/fonts/ConsolaMono-Book.ttf');
+}
+@font-face {
+  font-family: 'OfertaDoDia';
+  src: url('./assets/fonts/Oferta-do-Dia.ttf');
+}
+
+// Reseta as configurações padrão do navegador
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  margin: 0;
+  font-family: OfertaDoDia, "Helvetica Neue", sans-serif;
+  background-color: rgb(232 224 210);
+}
+

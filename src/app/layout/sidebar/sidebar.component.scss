@@ -1,0 +1,70 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  height: 75vh;
+  border: 1px solid green;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  margin: 10px 10px;
+  border-radius: 5px;
+  padding: auto;
+  border-color: #fff;
+}
+
+ul {
+  position: relative;
+  padding: 10px 0;
+}
+
+.list-group-pages {
+  li {
+    padding: 10px;
+    list-style: none;
+    width: 100%;
+    color: rgb(101 43 26);
+    border-bottom: 1.5px solid #8f3333;
+    cursor: pointer;
+  }
+}
+
+.list-group-filters-locais {
+  background-color: rgb(28 64 52);
+  list-style: none;
+  width: 100%;
+  color: rgb(101 43 26);
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  color: rgb(232 222 194);
+  h5 {
+    padding: 10px;
+  }
+  li {
+    list-style: none;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(199 164 148);
+    padding: 10px 0;
+    color: rgb(50 66 102);
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  margin-bottom: 0;
+}
+
+.list-group-filters-categorias {
+      list-style: none;
+    height: 40px;
+    width: 100%;
+
+    padding: 10px 0;
+    color: rgb(50 66 102);
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}

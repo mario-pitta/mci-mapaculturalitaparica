@@ -1,0 +1,31 @@
+<div class="sidebar">
+  <input type="text" id="text" class="input-container" placeholder="O que você procura?">
+  <ul class="list-group-pages">
+    <li *ngFor="let item of sidebarItems" [routerLink]="item.url"
+      class="d-flex align-items-center justify-content-between">
+      <span>{{ item.name }}</span>
+      <i> >></i>
+    </li>
+  </ul>
+
+  <ul class="list-group-filters-locais">
+    <h5>
+      SELECIONE O QUE VOCÊ QUER VER
+    </h5>
+
+
+    <li *ngFor="let local of locais" >
+      <img [src]="local.icon" alt="" srcset="">
+      <span> {{local.name}}</span>
+    </li>
+  </ul>
+
+
+  <ul class="list-group-filters-categorias">
+    <li *ngFor="let categoria of categorias">
+      <img class="categoria-icon" [src]="categoria.icon" alt="icone de {{categoria.name}}" srcset="">
+      <span> {{categoria.name}}</span>
+    </li>
+  </ul>
+
+</div>
