@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SidebarComponent implements OnInit {
   sidebarItems = [
     { name: 'SOBRE', url: '/sobre' },
+    { name: 'PARTICIPE', url: '/inscricao' },
     { name: 'ARTIGOS', url: '/artigos' },
     { name: 'CALENDÁRIO', url: '/calendario' },
     { name: 'CONTATO', url: '/contato' }

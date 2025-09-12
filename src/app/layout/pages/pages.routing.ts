@@ -17,6 +17,10 @@ const routes: Routes = [
         path: 'sobre',
         component: SobreComponent,
       },
+      {
+        path: 'inscricao',
+        loadChildren: () => import('./inscricao/inscricao.module').then(m => m.InscricaoModule)
+      },
       // {
       //   path: 'artigos',
       //   // loadChildren: () => import('./artigos/artigos.module').then(m => m.ArtigosModule)

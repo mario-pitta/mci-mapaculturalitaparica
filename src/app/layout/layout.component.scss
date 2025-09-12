@@ -4,11 +4,6 @@
 
 }
 
-.main-content {
-  display: flex;
-  flex: 1;
-  overflow: hidden;
-}
 
 router-outlet {
   flex: 1;
