@@ -102,6 +102,23 @@
   height: 100px !important;
 }
 
+#submit-form-button {
+  font-size: smaller;
+}
+
+.end-footer {
+  padding: 10px 10px;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  background-color: #1c4034;
+  color: aliceblue;
+  p {
+    margin: 10px 0;
+  }
+
+}
+
 //responsividade
 @media screen and (max-width: 768px) {
   .footer-container {
@@ -137,9 +154,7 @@
 }
 
 @media screen and (max-width: 900px) {
-
-
-    .footer-caboblo {
+  .footer-caboblo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,12 +163,12 @@
       margin-right: 0px;
     }
   }
-.realizacao-logos img {
-  height: 80px;
-  margin: 0 15px;
-}
+  .realizacao-logos img {
+    height: 80px;
+    margin: 0 15px;
+  }
 
-.apoio-logos img {
-  height: 80px;
-}
+  .apoio-logos img {
+    height: 80px;
+  }
 }
