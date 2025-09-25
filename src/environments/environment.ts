@@ -5,6 +5,10 @@
 export const environment = {
   production: false,
   googleMapsKey: "AIzaSyBuy4K3TmiArHSftGcbCzlVB7Lv_zWYynM",
+  emailjs_pk: 'IpeSv2jf1Qy_0b7cA',
+  emailjsId: 'service_9vanxm9',
+  emailjsTemplateId: "template_4mj7mvs",
+
 };
 
 /*
@@ -15,3 +19,4 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+import emailjs from '@emailjs/browser';
