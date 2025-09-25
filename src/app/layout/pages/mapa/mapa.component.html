@@ -1,0 +1,6 @@
+<div *ngIf="!isLoading && isMapReady">
+
+  <google-map height="100vh" width="100%" [center]="center" [zoom]="zoom" (mapClick)="onMapClick($event)" [options]="mapOptions">
+
+  </google-map>
+</div>

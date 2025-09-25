@@ -1,9 +1,4 @@
-.banner-bg {
-  background-image: url("/assets/images/photos/itaparica_01.jpg");
-  width: 100%;
-  height: 35vh;
-  background-size: cover;
-}
+
 
 .blue-bg {
   background-color: rgb(82 143 141);
@@ -12,32 +7,15 @@
   // background-size: cover;
 }
 
-.content {
-  padding: 20px 100px;
-  color: aliceblue;
-  h1 {
-    font-size: 2.5rem;
-    color: rgb(28 64 52);
-    font-weight: lighter;
-  }
-
-
-  section {
-    max-width: 450px;
-
-  }
-
-  h3 {
-    font-size: 30px;
-    color: rgb(42 55 74) !important;
-    font-weight: lighter;
-  }
-}
-
 .article {
   display: flex;
   gap: 100px;
   text-indent: 1.5em;
   margin-left: 20px;
   text-align: justify;
+}
+
+
+section#project-description {
+    max-width: 50%;
 }

@@ -1,9 +1,9 @@
 <!-- o component de layout vai definir a estrutura visual da aplicacao, ele é composto por um sidebar, um  header, um footer e um container para o conteudo principal -->
 <div class="layout">
   <app-header></app-header>
-  <div class="main-content">
+  <div class=" d-flex">
     <!-- <app-sidebar></app-sidebar> -->
-    <app-pages></app-pages>
+    <router-outlet></router-outlet>
   </div>
   <app-footer></app-footer>
 </div>

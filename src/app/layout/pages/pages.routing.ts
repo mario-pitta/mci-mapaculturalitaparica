@@ -21,10 +21,18 @@ const routes: Routes = [
         path: 'inscricao',
         loadChildren: () => import('./inscricao/inscricao.module').then(m => m.InscricaoModule)
       },
-      // {
-      //   path: 'artigos',
-      //   // loadChildren: () => import('./artigos/artigos.module').then(m => m.ArtigosModule)
-      // },
+      {
+        path: 'equipe',
+        loadChildren: () => import('./equipe/equipe.module').then(m => m.EquipeModule)
+      },
+      {
+        path: 'artigos',
+        loadChildren: () => import('./artigos/artigos.module').then(m => m.ArtigosModule)
+      },
+      {
+        path: 'mapa',
+        loadChildren: () => import('./mapa/mapa.module').then(m => m.MapaModule)
+      }
       // {
       //   path: 'calendario',
       //   // loadChildren: () => import('./calendario/calendario.module').then(m => m.CalendarioModule)

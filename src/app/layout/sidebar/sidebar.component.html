@@ -3,7 +3,7 @@
   <ul class="list-group-pages">
     <li *ngFor="let item of sidebarItems" [routerLink]="item.url"
       class="d-flex align-items-center justify-content-between consola-mono-bold">
-      <span>{{ item.name }}</span>
+      <strong>{{ item.name }}</strong>
       <i> >></i>
     </li>
   </ul>

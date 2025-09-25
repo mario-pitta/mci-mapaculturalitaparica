@@ -1,0 +1,94 @@
+<div class="blue-bg">
+  <div class="header"></div>
+
+  <div class="content ">
+    <article class="article">
+      <section id="project-description">
+        <h1 class="ps-md-5 page-title oferta-do-dia text-dark-color"> QUEM SOMOS</h1>
+
+        <div class="ps-md-5 row justify-content-between align-items-center">
+          <div class="col-md-6 col-sm-12 mb-2">
+            <p class="text-align-justify">
+              Uma introdução sobre o que é o Mapa Cultural de Itaparica, em termos do
+              propósito, da metodologia, da importância cultural e dos impactos espera
+              dos, além de um convite para o público se reconhecer no território e se
+              sentir parte dessa construção.
+            </p>
+          </div>
+          <div class="ps-md-5 col-md-5 col-sm-12 text-center d-sm-none d-md-block">
+            <img src="/assets/images/GEOGRAFIACOR.png" alt="Logo do Mapa Cultural de Itaparica" class="img-fluid ">
+          </div>
+
+
+        </div>
+      </section>
+      <div>
+        <section>
+          <br>
+          <h3 class="ps-md-5 section-title oferta-do-dia">Realização</h3>
+          <hr>
+          <br>
+          <div class=" ps-md-5  row">
+            <div class="col-md-6 col-sm-12 mb-2">
+              <div class="d-flex flex-wrap flex-md-nowrap text-align-justify justify-content-between gap-5">
+                <img src="/assets/images/equipe/lara_carvalho.png" alt="Logo do Mapa Cultural de Itaparica"
+                  class="img-fluid ">
+                <div class="equipe_member">
+                  <h1 class="oferta-do-dia text-dark-color">Lara Carvalho</h1>
+                  <strong>Idealizadora</strong>
+                  <br>
+                  <p class="text-align-justify mt-2">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti sapiente commodi, nemo tempora a
+                    rem doloribus repellat eius harum, officiis aut quidem. Laborum aliquam voluptas necessitatibus
+                    eveniet commodi laudantium praesentium.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 mb-2">
+              <div class="d-flex flex-wrap flex-md-nowrap text-align-justify justify-content-between gap-5">
+                <img src="/assets/images/equipe/stefane_souto.png" alt="Logo do Mapa Cultural de Itaparica"
+                  class="img-fluid ">
+                <div class="equipe_member">
+                  <h1 class="oferta-do-dia text-dark-color">Stefane Souto</h1>
+                  <strong>Idealizadora</strong>
+                  <br>
+                  <p class="text-align-justify mt-2">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti sapiente commodi, nemo tempora a
+                    rem doloribus repellat eius harum, officiis aut quidem. Laborum aliquam voluptas necessitatibus
+                    eveniet commodi laudantium praesentium.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section>
+          <br>
+          <h3 class="ps-md-5 section-title oferta-do-dia">Equipe</h3>
+          <hr>
+          <br>
+          <div class="row ps-md-5 ">
+            <ng-container *ngFor="let membro of equipe; let i = index">
+              <div class="col-md-6 col-sm-12 mb-2">
+                <div class="d-flex flex-wrap flex-md-nowrap text-align-justify justify-content-between gap-5">
+                  <img [src]="membro.image" alt="Logo do Mapa Cultural de Itaparica" class="img-fluid member-image">
+                  <div class="equipe_member">
+                    <h1 class="oferta-do-dia text-dark-color">{{ membro.name  | titlecase }}</h1>
+                    <strong>{{ membro.role}}</strong>
+                    <br>
+                    <p class="text-align-justify mt-2">
+                      {{ membro.description }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </section>
+      </div>
+    </article>
+  </div>
+</div>

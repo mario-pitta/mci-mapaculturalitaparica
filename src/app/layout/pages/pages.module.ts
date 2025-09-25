@@ -3,8 +3,6 @@ import { PagesComponent } from "./pages.component";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import { PagesRoutingModule } from "./pages.routing";
-import { InscricaoComponent } from './inscricao/inscricao.component';
-
 
 @NgModule({
   declarations: [PagesComponent],
