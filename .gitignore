@@ -179,3 +179,32 @@ out
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+dist/mapa-cultural/3rdpartylicenses.txt
+dist/mapa-cultural/34.62e05381da18fd5a.js
+dist/mapa-cultural/840.e43abbd604a9f4c3.js
+dist/mapa-cultural/873.41533cf3a92137ba.js
+dist/mapa-cultural/913.0bee2fc03d483155.js
+dist/mapa-cultural/index.html
+dist/mapa-cultural/main.3db4e49c534269d4.js
+dist/mapa-cultural/main.f31907ae8ff4f7e6.js
+dist/mapa-cultural/polyfills.7a04fb2b60f4f076.js
+dist/mapa-cultural/polyfills.21cdc02ef7d9c1bf.js
+dist/mapa-cultural/runtime.383558bfbd621fdc.js
+dist/mapa-cultural/runtime.fb8efdf871376737.js
+dist/mapa-cultural/scripts.f4bee30a08a2bbf0.js
+dist/mapa-cultural/styles.05c463e1b2590100.css
+dist/mapa-cultural/styles.14dd66e0bc85e91b.css
+dist/mapa-cultural/assets/images/banner formulário-01.png
+dist/mapa-cultural/assets/images/cabocla com fundo.png
+dist/mapa-cultural/assets/images/GEOGRAFIACOR.png
+dist/mapa-cultural/assets/images/MCI-LOGO-COR.png
+dist/mapa-cultural/assets/images/PADRAO NOME-SEM RAPPORT.png
+dist/mapa-cultural/assets/images/equipe/alyssa.png
+dist/mapa-cultural/assets/images/equipe/lara_carvalho.png
+dist/mapa-cultural/assets/images/equipe/stefane_souto.png
+dist/mapa-cultural/assets/images/logos/patrocinio/lei paulo gustavo pb.png
+dist/mapa-cultural/assets/images/logos/patrocinio/secult-ba.png
+dist/mapa-cultural/assets/images/logos/realizacao/Logo Transatlântica Branco.png
+dist/mapa-cultural/assets/images/logos/realizacao/lua de maré_logo horizontal branca.png
+dist/mapa-cultural/assets/images/logos/social/youtube.png
+dist/mapa-cultural/assets/images/photos/itaparica_01.jpg
