@@ -187,3 +187,22 @@ app-pages {
   --warning-color: #ff9800;
   --info-color: #2196f3;
 }
+
+/* Accessibility helpers */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Visible focus styles to aid keyboard users */
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 3px solid #ffd54f;
+  outline-offset: 2px;
+}
