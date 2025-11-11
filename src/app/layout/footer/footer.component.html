@@ -80,11 +80,11 @@
 
                     <form class="form form-section" [formGroup]="form" (ngSubmit)="sendForm()" aria-label="Formulário de cadastro para receber informações">
                         <h6>faça parte</h6>
-                        <label for="footer-email" class="sr-only">Seu email</label>
+                        <label for="footer-email" hidden class=" sr-only">Seu email</label>
                         <input id="footer-email" class="form-control w-100" required type="email" formControlName="email" placeholder="Seu email" aria-required="true">
                         <br>
                         <div class="d-flex gap-2">
-                            <label for="footer-name" class="sr-only">Seu nome</label>
+                            <label for="footer-name" hidden class=" sr-only">Seu nome</label>
                             <input id="footer-name" class="form-control w-50" type="text" placeholder="Seu nome" formControlName="name">
                             <button id="submit-form-button" class="btn w-50 btn-light p-0 shadow-lg" [disabled]="!form.valid" type="submit" aria-label="Enviar formulário para receber o formulário e novidades">Receber
                 Formulário</button>

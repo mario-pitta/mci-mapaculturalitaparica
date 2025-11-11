@@ -15,7 +15,7 @@
     </h4>
     <ul class="list-group-filters-locais">
         <li *ngFor="let local of locais" class="consola-mono">
-            <img [src]="local.icon" alt="Ícone {{local.name}}" srcset="">
+            <img [src]="local.icon" alt="Ícone de {{local.name}}" srcset="">
             <span> {{local.name}}</span>
         </li>
     </ul>
@@ -24,7 +24,7 @@
     <ul class="list-group-filters-categorias">
         <li *ngFor="let categoria of categorias" class="consola-mono">
             <div class="before-item" [ngClass]="categoria.color"></div>
-            <img class="icon-categoria" [src]="categoria.icon" alt="Ícone {{categoria.name}}" srcset="">
+            <img class="icon-categoria" [src]="categoria.icon" alt="Ícone de {{categoria.name}}" srcset="">
             <span> {{categoria.name}}</span>
         </li>
     </ul>
