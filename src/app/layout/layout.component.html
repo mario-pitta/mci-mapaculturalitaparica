@@ -1,11 +1,15 @@
 <!-- o component de layout vai definir a estrutura visual da aplicacao, ele é composto por um sidebar, um  header, um footer e um container para o conteudo principal -->
 <div class="layout">
-  <app-header></app-header>
-  <div class=" d-flex">
-    <!-- <app-sidebar></app-sidebar> -->
-    <router-outlet></router-outlet>
-  </div>
-  <app-footer></app-footer>
+    <!-- Skip link for keyboard users -->
+    <a class="sr-only sr-only-focusable" href="#main-content">Pular para o conteúdo</a>
+    <app-header></app-header>
+    <div class=" d-flex">
+        <!-- <app-sidebar></app-sidebar> -->
+        <main id="main-content" role="main" tabindex="-1">
+            <router-outlet></router-outlet>
+        </main>
+    </div>
+    <app-footer></app-footer>
 </div>
 <style>
 

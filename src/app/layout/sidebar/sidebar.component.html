@@ -1,32 +1,32 @@
 <div class="sidebar">
-  <input type="text" id="text" class="input-container" placeholder="O que você procura?">
-  <ul class="list-group-pages">
-    <li *ngFor="let item of sidebarItems" [routerLink]="item.url"
-      class="d-flex align-items-center justify-content-between consola-mono-bold">
-      <strong>{{ item.name }}</strong>
-      <i> >></i>
-    </li>
-  </ul>
+    <label for="sidebar-search" class="sr-only">Pesquisar no mapa</label>
+    <input id="sidebar-search" type="search" class="input-container" placeholder="O que você procura?" aria-label="Pesquisar no mapa">
+    <ul class="list-group-pages">
+        <li *ngFor="let item of sidebarItems" class="d-flex align-items-center justify-content-between consola-mono-bold">
+            <a [routerLink]="item.url" class="d-flex w-100 justify-content-between" [attr.aria-label]="'Ir para {{item.name}}'">
+                <strong>{{ item.name }}</strong>
+                <i aria-hidden="true"> &gt;&gt;</i>
+            </a>
+        </li>
+    </ul>
 
-  <ul class="list-group-filters-locais">
     <h4 class="oferta-do-dia">
-      SELECIONE O QUE VOCÊ QUER VER
+        SELECIONE O QUE VOCÊ QUER VER
     </h4>
+    <ul class="list-group-filters-locais">
+        <li *ngFor="let local of locais" class="consola-mono">
+            <img [src]="local.icon" alt="Ícone {{local.name}}" srcset="">
+            <span> {{local.name}}</span>
+        </li>
+    </ul>
 
 
-    <li *ngFor="let local of locais" class="consola-mono" >
-      <img [src]="local.icon" alt="" srcset="">
-      <span> {{local.name}}</span>
-    </li>
-  </ul>
-
-
-  <ul class="list-group-filters-categorias">
-    <li *ngFor="let categoria of categorias" class="consola-mono">
-      <div class="before-item" [ngClass]="categoria.color"></div>
-      <img class="icon-categoria" [src]="categoria.icon" alt="icone de {{categoria.name}}" srcset="">
-      <span> {{categoria.name}}</span>
-    </li>
-  </ul>
+    <ul class="list-group-filters-categorias">
+        <li *ngFor="let categoria of categorias" class="consola-mono">
+            <div class="before-item" [ngClass]="categoria.color"></div>
+            <img class="icon-categoria" [src]="categoria.icon" alt="Ícone {{categoria.name}}" srcset="">
+            <span> {{categoria.name}}</span>
+        </li>
+    </ul>
 
 </div>
