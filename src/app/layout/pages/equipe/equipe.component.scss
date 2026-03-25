@@ -1,5 +1,8 @@
-.member-image  {
-  width: 350px !important;
-  height: 350px !important;
-  filter: saturate(0.5);
+.member-image {
+    min-width: 350px !important;
+    max-width: 350px !important;
+    min-height: 350px !important;
+    max-height: 350px !important;
+    filter: saturate(0);
+    object-fit: cover;
 }

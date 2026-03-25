@@ -29,8 +29,12 @@ p {
     font-family: ConsolaMono-Book;
 }
 
-app-pages {
-    width: 100% !important;
+// app-pages {
+//     width: 100% !important;
+// }
+main {
+    max-height: 911px !important;
+    overflow: auto;
 }
 
 .callbtn {
@@ -51,6 +55,10 @@ app-pages {
         // box-shadow: none;
         // color: #e8e0d2;
     }
+}
+
+.text-justify {
+    text-align: justify !important;
 }
 
 .content {
@@ -195,4 +203,38 @@ app-pages {
     --error-color: #f44336;
     --warning-color: #ff9800;
     --info-color: #2196f3;
+}
+
+
+/* Accessibility helpers */
+
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+}
+
+
+/* visible focus ring for keyboard users */
+
+:focus {
+    outline: 3px solid #ffd54f;
+    outline-offset: 2px;
 }

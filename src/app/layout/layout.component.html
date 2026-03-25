@@ -4,8 +4,9 @@
     <a class="sr-only sr-only-focusable" href="#main-content">Pular para o conteúdo</a>
     <app-header></app-header>
     <div class=" d-flex">
-        <!-- <app-sidebar></app-sidebar> -->
-        <main id="main-content" role="main" tabindex="-1">
+        <app-sidebar></app-sidebar>
+        <div class="sidebar-backdrop" *ngIf="(sidebarService.open$ | async)" (click)="sidebarService.close()" aria-hidden="true"></div>
+        <main id="main-content" role="main" tabindex="-1" [attr.aria-hidden]="(sidebarService.open$ | async) ? 'true' : null">
             <router-outlet></router-outlet>
         </main>
     </div>

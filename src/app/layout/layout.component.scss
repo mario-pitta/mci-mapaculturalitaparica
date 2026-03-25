@@ -1,10 +1,36 @@
 app-sidebar {
-  width: 250px;
-  border-right: 1px solid #ddd;
-  box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+    width: 250px;
+    border-right: 1px solid #ddd;
+    box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
 }
 
 app-pages {
-  width: 100% !important;
+    width: 100% !important;
+}
+
+
+/* backdrop used when sidebar is open on small screens */
+
+.sidebar-backdrop {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    app-sidebar {
+        display: block;
+    }
+    .sidebar-backdrop {
+        display: block;
+        position: fixed;
+        inset: 0 0 0 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 1100;
+    }
+    /* keep main behind overlay when sidebar open */
+    main[aria-hidden="true"] {
+        pointer-events: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
 }

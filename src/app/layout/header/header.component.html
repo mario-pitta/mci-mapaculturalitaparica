@@ -1,4 +1,7 @@
-<header role="banner">
-  <div class="background" aria-hidden="true"></div>
-  <img class="logo" src="/assets/images/MCI-LOGO-COR.png" alt="Mapa Cultural de Itaparica — logotipo">
+<header role="banner" class="header-bar">
+    <div class="background" aria-hidden="true"></div>
+    <button class="sidebar-toggle" aria-controls="app-sidebar" [attr.aria-expanded]="isOpen" (click)="toggleSidebar()" aria-label="Abrir menu lateral">
+    ☰
+  </button>
+    <img class="logo" src="/assets/images/MCI-LOGO-COR.png" alt="Mapa Cultural de Itaparica — logotipo">
 </header>

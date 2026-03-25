@@ -3,10 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { InscricaoModule } from './layout/pages/inscricao/inscricao.module';
 
 const routes: Routes = [
-  //  {
-  //   path: '',
-  //   loadChildren: () => import('./layout/layout.module').then(m => m.LayoutModule),
-  // },
+  {
+    path: '',
+    loadChildren: () => import('./layout/layout.module').then(m => m.LayoutModule),
+  },
   {
     path: 'inscricao',
     loadChildren: () =>
@@ -25,4 +25,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

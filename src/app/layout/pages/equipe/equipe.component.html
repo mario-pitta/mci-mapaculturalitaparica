@@ -28,26 +28,39 @@
                     <div class=" ps-md-5  row">
                         <div class="col-md-6 col-sm-12 mb-2">
                             <div class="d-flex flex-wrap flex-md-nowrap text-align-justify justify-content-between gap-5">
-                                <img src="/assets/images/equipe/lara_carvalho.png" alt="Foto de Lara Carvalho" class="img-fluid ">
+                                <img src="/assets/images/equipe/lara_carvalho.png" alt="Foto de Lara Carvalho" class="img-thumbnail h-50 ">
                                 <div class="equipe_member">
                                     <h2 class="oferta-do-dia text-dark-color">Lara Carvalho</h2>
                                     <strong>Idealizadora</strong>
                                     <br>
-                                    <p class="text-align-justify mt-2">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti sapiente commodi, nemo tempora a rem doloribus repellat eius harum, officiis aut quidem. Laborum aliquam voluptas necessitatibus eveniet commodi laudantium praesentium.
+                                    <p class="text-justify mt-2">
+                                        Lara Carvalho é Professora de Cinema e Audiovisual na Faculdade de Comunicação da Universidade Federal da Bahia, Doutoranda e Mestre pelo Póscom/UFBA. Soteropolitana com raízes em Itaparica e no Recôncavo Baiano, atua como roteirista, diretora e produtora
+                                        há 15 anos. Foi Coordenadora Audiovisual da 3ª Bienal da Bahia e assina os roteiros de projetos como Meridianos, 56 Dias, Menarca, Quitéria, Escorço, Fórmula Dreams, Damiano e Hyperkart. Finalista do Sundance Episodic
+                                        Lab e vencedora do Concurso Narratologias 2023. Em 2024 lançou o curta ficcional 56 Dias, o podcast híbrido Meridianos e, em 2025, lançou o documentário infanto-juvenil Menarca. Também integra os projetos Mapa Cultural
+                                        de Itaparica, Campos Rupestres e FLIRO – Festa de Literatura e Roteiro. Como pesquisadora audiovisual e escritora, publicou diversos artigos, além dos livros Uma (Breve) História das Mulheres no Cinema (2022) e
+                                        Cinema: substantivo feminino (2024). Também integra as antologias Quem dera o sangue fosse só da menstruação, Corpo que arde e Selo Off Flip 2024. Pesquisa cinemas feitos por mulheres, cineastas latinoamericanas
+                                        e questões do corpo, do sensível e da ritualidade no audiovisual e integra o grupo de pesquisa (An)arqueologias do Sensível (Póscom/UFBA). Atualmente, está em fase de produção do curta de animação Mar Subversivo
+                                        e desenvolve sua tese de doutorado que propõe um atlas de gestos de cinema-ritual.
+
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12 mb-2">
                             <div class="d-flex flex-wrap flex-md-nowrap text-align-justify justify-content-between gap-5">
-                                <img src="/assets/images/equipe/stefane_souto.png" alt="Foto de Stefane Souto" class="img-fluid ">
+                                <img src="/assets/images/equipe/stefane_souto.png" alt="Foto de Stefane Souto" class="img-thumbnail h-50 ">
                                 <div class="equipe_member">
-                                    <h2 class="oferta-do-dia text-dark-color">Stefane Souto</h2>
+                                    <h2 class="oferta-do-dia text-dark-color">Stéfane Souto</h2>
                                     <strong>Idealizadora</strong>
                                     <br>
-                                    <p class="text-align-justify mt-2">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti sapiente commodi, nemo tempora a rem doloribus repellat eius harum, officiis aut quidem. Laborum aliquam voluptas necessitatibus eveniet commodi laudantium praesentium.
+                                    <p class="text-justify mt-2">
+                                        Stéfane Souto é gestora cultural, pesquisadora e professora do curso de Produção Cultural da Faculdade de Comunicação da Universidade Federal da Bahia. Soteroitaparicana, Stéfane é graduada em Produção em Comunicação e Cultura, possui mestrado em Cultura
+                                        e Sociedade pela Universidade Cultural da Bahia e é especialista em Gestão Cultural Contemporânea pelo Instituto Itaú Cultural. Contando 15 anos de atuação profissional no campo da produção cultural, Stéfane possui
+                                        uma experiência relevante e reconhecida como produtora executiva e gestora de projetos, tendo passado por importantes instituições culturais da cidade de Salvador, como o Teatro Gamboa e a Secretaria de Cultura
+                                        e Turismo de Salvador, onde atuou como coordenadora de economia da cultura durante o ano de 2023, quando idealizou a implantação da Agência do Trabalhador da Cultura na capital baiana e criação do Prêmio Cidade
+                                        da Música. Atualmente, Stéfane se dedica à direção executiva e criativa da Transatlântica, plataforma de criação cultural em afroperspectiva da qual é idealizadora e fundadora. No âmbito acadêmico, desenvolve pesquisa
+                                        sobre experiências de aquilombamento do povo negro no campo das artes e da cultura, sob uma perspectiva insurgente, engajada e contra-hegemônica da gestão cultural.
+
                                     </p>
                                 </div>
                             </div>
@@ -65,12 +78,12 @@
                         <ng-container *ngFor="let membro of equipe; let i = index">
                             <div class="col-md-6 col-sm-12 mb-2">
                                 <div class="d-flex flex-wrap flex-md-nowrap text-align-justify justify-content-between gap-5">
-                                    <img [src]="membro.image" alt="Foto de {{ membro.name }}" class="img-fluid member-image">
-                                    <div class="equipe_member">
+                                    <div>
+                                        <img *ngIf="membro.image" [src]="membro.image" alt="Foto de {{ membro.name }}" class="member-image img-thumbnail">
                                         <h2 class="oferta-do-dia text-dark-color">{{ membro.name | titlecase }}</h2>
                                         <strong>{{ membro.role}}</strong>
                                         <br>
-                                        <p class="text-align-justify mt-2">
+                                        <p class="text-justify mt-2">
                                             {{ membro.description }}
                                         </p>
                                     </div>
