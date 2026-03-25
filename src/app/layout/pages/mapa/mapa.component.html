@@ -1,6 +1,6 @@
-<div *ngIf="!isLoading && isMapReady">
+<div *ngIf="!isLoading && isMapReady" style="width: 100vw;">
 
-  <google-map height="100vh" width="100%" role="application" aria-label="Mapa interativo de Itaparica" tabindex="0" [center]="center" [zoom]="zoom" (mapClick)="onMapClick($event)" [options]="mapOptions">
+    <google-map height="100vh" width="100%" role="application" aria-label="Mapa interativo de Itaparica" tabindex="0" [center]="center" [zoom]="zoom" (mapClick)="onMapClick($event)" [options]="mapOptions">
 
-  </google-map>
+    </google-map>
 </div>
